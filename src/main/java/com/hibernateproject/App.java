@@ -1,7 +1,5 @@
 package com.hibernateproject;
 
-
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
@@ -32,10 +30,10 @@ SessionFactory sf = cfg.buildSessionFactory();
 //creating student object
         
         Student st = new Student();
-        st.setId(10);
-        st.setName("Neha");
-        st.setMobileNo(809710978);
-        st.setEmail("nehaspatil@gmail.com");
+        st.setId(103);
+        st.setName("komal");
+        st.setMobileNo(703834643);
+        st.setEmail("komalspatil@gmail.com");
         st.setCity("Pune");
         
         System.out.println(st);
@@ -44,16 +42,16 @@ SessionFactory sf = cfg.buildSessionFactory();
         
         Address ad= new Address();
         
-        ad.setStreet("Street1");
-        ad.setCity("Mumbai"); 
+        ad.setStreet("Moshi");
+        ad.setCity("Pune"); 
         ad.setAddedDate(new Date());
-        ad.setX("1234");
+        ad.setX("B906");
         
 //Reading image and saving it in Database
         
-        FileInputStream fis =new FileInputStream("src/main/java/IMG-20240210-WA9.jpg");
-        byte [] imageData = new byte[fis.available()];
-        ad.setImage(imageData);
+//        FileInputStream fis =new FileInputStream("src/main/java/IMG-20240210-WA9.jpg");
+//        byte [] imageData = new byte[fis.available()];
+//        ad.setImage(imageData);
         
         
         Session session = sf.openSession();
