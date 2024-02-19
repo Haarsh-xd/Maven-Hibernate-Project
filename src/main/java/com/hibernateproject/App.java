@@ -30,10 +30,10 @@ SessionFactory sf = cfg.buildSessionFactory();
 //creating student object
         
         Student st = new Student();
-        st.setId(103);
-        st.setName("komal");
-        st.setMobileNo(703834643);
-        st.setEmail("komalspatil@gmail.com");
+        st.setId(108);
+        st.setName("gajanan");
+        st.setMobileNo(987456321);
+        st.setEmail("@gmail.com");
         st.setCity("Pune");
         
         System.out.println(st);
@@ -42,10 +42,10 @@ SessionFactory sf = cfg.buildSessionFactory();
         
         Address ad= new Address();
         
-        ad.setStreet("Moshi");
-        ad.setCity("Pune"); 
+        ad.setStreet("Vaijapur");
+        ad.setCity("Aurangabad"); 
         ad.setAddedDate(new Date());
-        ad.setX("B906");
+        ad.setX("123");
         
 //Reading image and saving it in Database
         

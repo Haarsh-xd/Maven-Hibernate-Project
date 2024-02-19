@@ -20,7 +20,7 @@ public class FetchData {
 		// get = student:102
 		
 		Student studentdata = new Student();
-		studentdata = session.load(Student.class, 101);
+		studentdata = session.load(Student.class, 106);
 		System.out.println(studentdata);
 		
 		
